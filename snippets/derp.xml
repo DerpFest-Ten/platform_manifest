@@ -86,6 +86,8 @@
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" remote="derp" />
   <project path="packages/apps/CertInstaller" name="platform_packages_apps_CertInstaller" remote="derp" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="derp" />
+  <project path="packages/apps/CustomDoze" name="platform_packages_apps_CustomDoze" remote="derp" />
+  <project path="packages/apps/DerpQuest" name="platform_packages_apps_DerpQuest" remote="derp" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="derp" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="derp" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="derp" />
@@ -94,7 +96,6 @@
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="derp" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="derp" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="derp" />
-  <project path="packages/apps/DerpQuest" name="platform_packages_apps_DerpQuest" remote="derp" />
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="derp" />
   <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="derp" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="derp" />
