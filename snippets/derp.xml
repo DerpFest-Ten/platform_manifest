@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="derp"
+           fetch="https://github.com/DerpFest-Ten"
+           revision="refs/heads/ten" />
+
+  <remote  name="syberia-bb"
+           fetch="https://bitbucket.org/syberia-project"
+           revision="refs/heads/10.0" />
+
+  <remote  name="devices"
+           fetch="https://github.com/DerpFest-Devices"
+           revision="refs/heads/ten" />
+
+  <!-- DerpFest -->
+  <!-- General -->
+  <project path="art" name="platform_art" remote="derp" />
+  <project path="bionic" name="platform_bionic" remote="derp" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="derp" />
+  <project path="development" name="platform_development" remote="derp" />
+  <project path="manifest" name="platform_manifest" remote="derp" />
+
+  <!-- Build -->
+  <project path="build/blueprint" name="platform_build_blueprint" remote="derp" />
+  <project path="build/make" name="platform_build" remote="derp" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="derp" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/derp/sepolicy" name="device_derp_sepolicy" remote="derp" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="derp" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="derp" revision="ten-legacy" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="derp" revision="ten-legacy-um" />
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="derp" />
+  <project path="external/google" name="platform_external_google" remote="derp" />
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="syberia-bb" />
+  <project path="external/selinux" name="platform_external_selinux" remote="derp" />
+  <project path="external/tinyalsa" name="platform_external_tinyalsa" remote="derp" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="derp" />
+  <project path="external/toybox" name="platform_external_toybox" remote="derp" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="derp" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="derp" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="derp" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="derp" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="derp" />
+
+  <!-- Hardware -->
+  <project path="hardware/derp/interfaces" name="platform_hardware_derp_interfaces" remote="derp" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="derp" />
+  <project path="hardware/knowles/athletico/sound_trigger_hal" name="platform_hardware_knowles_athletico_sound_trigger_hal" remote="derp" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="derp" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="derp" />
+  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="derp" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="platform_hardware_qcom_data_ipacfg-mgr" remote="derp" />
+  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" remote="derp" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="derp" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="derp" />
+  <project path="packages/apps/CarrierConfig" name="platform_packages_apps_CarrierConfig" remote="derp" />
+  <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" remote="derp" />
+  <project path="packages/apps/CertInstaller" name="platform_packages_apps_CertInstaller" remote="derp" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="derp" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="derp" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="derp" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="derp" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="derp" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="derp" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="derp" />
+  <project path="packages/apps/DerpQuest" name="platform_packages_apps_DerpQuest" remote="derp" />
+  <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="derp" />
+  <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="derp" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="derp" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="derp" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="derp" />
+  <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
+  <project path="packages/apps/Snap" name="platform_packages_apps_Snap" remote="derp" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="derp" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="derp" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="derp" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="derp" />
+  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" remote="derp" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="derp" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="derp" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="derp" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="derp" />
+
+  <!-- Platform -->
+  <project path="platform_testing" name="platform_platform_testing" remote="derp" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" remote="github" revision="ten" clone-depth="1" />
+
+  <!-- System -->
+  <project path="system/apex" name="platform_system_apex" remote="derp" />
+  <project path="system/bpf" name="platform_system_bpf" remote="derp" />
+  <project path="system/bt" name="platform_system_bt" remote="derp" />
+  <project path="system/core" name="platform_system_core" remote="derp" />
+  <project path="system/extras" name="platform_system_extras" remote="derp" />
+  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="derp" />
+  <project path="system/netd" name="platform_system_netd" remote="derp" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="derp" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="derp" />
+  <project path="system/vold" name="platform_system_vold" remote="derp" />
+
+  <!-- Tools -->
+  <project path="tools/apifinder" name="platform_tools_apifinder" remote="derp" />
+
+  <!-- Vendor -->
+  <project path="vendor/derp" name="platform_vendor_derp" remote="derp" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="derp" />
+  <project path="vendor/google-customization" name="platform_vendor_google-customization" remote="derp" />
+  <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="derp" />
+  <project path="vendor/overlay" name="platform_vendor_overlay" remote="derp" />
+  <project path="vendor/pixelgapps" name="TeamIllusion/platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="derp" />
+
+</manifest>
+

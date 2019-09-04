@@ -1,0 +1,76 @@
+DerpFest
+==============
+
+This ROM exists thanks to our base - AOSiP, Thank you!
+
+Getting Started
+---------------
+
+To get started with Android, you'll need to get
+familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the DerpFest trees, use a command like this:
+
+```bash
+repo init -u git://github.com/DerpFest-Ten/platform_manifest.git -b ten
+```
+Then to sync up:
+```bash
+repo sync --force-sync --no-tags --no-clone-bundle
+```
+
+Building the source
+---------------
+
+The source at DerpFest is well configured for building. You can choose to build with or without gapps included.
+
+```bash
+. build/envsetup.sh
+lunch derp_device-userdebug
+mka derp
+
+If you would like to include gapps in your build, after lunching device enter:
+export WITH_GAPPS=true
+```
+
+## Help from other devices ##
+
+Look, my device doesn't have FOD, so I couldn't add and test the FOD features myself. The same happens with Notch stuff, so if you want to add tweaks, features or help me to optimize the ROM, you can make pull request and help me out, will be really appreciated.
+
+
+## Maintaining Authorship ##
+
+Please make sure if you submit a patch/fix from another ROM that you maintain authorship.
+This is very important to not only us but to the entire open source community. It's what keeps it going and encourages more developers to 
+contribute their work.
+
+If you manually cherry pick a patch/fix please add the original author prior to pushing to our gerrit.
+This task is very easy and is usually done after you commit a patch/fix locally.
+
+i.e - Once you type in "git commit -a" the commit message and you have saved it, type in the following:
+
+```bash
+git commit --amend --author "Author <email@address.com>"
+```
+
+So it should look like this once you get all author's information:
+
+```bash
+git commit --amend --author "Shreesha <shreeshu10@gmail.com>"
+```
+
+## Thanks section ##
+
+Here's my thanks to people who made this possible:
+
+* AOSiP
+* PixelExperience
+* CrDroid
+* Pixeldust Project
+* BootleggersROM
+* OmniROM
+* CyanogenMod/LineageOS
+* Ground Zero ROMs Team
+* NitrogenOS
+* AICP
+* DirtyUnicorns
