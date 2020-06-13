@@ -134,7 +134,7 @@
   <project path="vendor/google-customization" name="platform_vendor_google-customization" remote="derp" />
   <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="derp" />
   <project path="vendor/overlay" name="platform_vendor_overlay" remote="derp" />
-  <project path="vendor/pixelgapps" name="TeamIllusion/platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
+  <project path="vendor/pixelgapps" name="NurKeinNeid/platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="derp" />
 
 </manifest>
