@@ -111,7 +111,7 @@
   <project path="platform_testing" name="platform_platform_testing" remote="derp" />
 
   <!-- Prebuilts -->
-  <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" remote="github" revision="ten" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="derp" clone-depth="1" />
 
   <!-- System -->
   <project path="system/apex" name="platform_system_apex" remote="derp" />
