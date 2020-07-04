@@ -25,7 +25,7 @@
   <project path="bionic" name="platform_bionic" remote="derp" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="derp" />
   <project path="development" name="platform_development" remote="derp" />
-  <project path="manifest" name="platform_manifest" remote="derp" />
+  <project path="manifest" name="DerpFest-Ten/platform_manifest" remote="github" revision="ten-nosubs" />
 
   <!-- Build -->
   <project path="build/blueprint" name="platform_build_blueprint" remote="derp" />
@@ -54,7 +54,7 @@
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="derp" />
   <project path="external/google" name="platform_external_google" remote="derp" />
   <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="syberia-bb" />
-  <project path="external/pulse" name="platform_external_pulse" remote="derp" />
+  <project path="external/pulse" name="DerpFest-Ten/platform_external_pulse" remote="github" revision="ten-nosubs" />
   <project path="external/selinux" name="platform_external_selinux" remote="derp" />
   <project path="external/skia" name="platform_external_skia" remote="derp" />
   <project path="external/tinyalsa" name="platform_external_tinyalsa" remote="derp" />
@@ -63,7 +63,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="derp" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="derp" />
+  <project path="frameworks/base" name="DerpFest-Ten/platform_frameworks_base" remote="github" revision="ten-nosubs" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="derp" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="derp" />
   <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="derp" />
@@ -82,15 +82,16 @@
 
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="derp" />
+  <project path="packages/apps/BlurView" name="platform_packages_apps_BlurView" remote="derp" />
   <project path="packages/apps/CarrierConfig" name="platform_packages_apps_CarrierConfig" remote="derp" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform_packages_apps_CellBroadcastReceiver" remote="derp" />
   <project path="packages/apps/CertInstaller" name="platform_packages_apps_CertInstaller" remote="derp" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="derp" />
   <project path="packages/apps/CustomDoze" name="platform_packages_apps_CustomDoze" remote="derp" />
-  <project path="packages/apps/DerpQuest" name="platform_packages_apps_DerpQuest" remote="derp" />
+  <project path="packages/apps/DerpQuest" name="DerpFest-Ten/platform_packages_apps_DerpQuest" remote="github" revision="ten-nosubs" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="derp" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="derp" />
-  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="derp" />
+  <project path="packages/apps/DocumentsUI" name="DerpFest-Ten/platform_packages_apps_DocumentsUI" remote="github" revision="ten-nosubs" />
   <project path="packages/apps/Email" name="platform_packages_apps_Email" remote="derp" />
   <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" remote="derp" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="derp" />
@@ -99,8 +100,8 @@
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="derp" />
   <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="derp" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="derp" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="derp" />
-  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="derp" />
+  <project path="packages/apps/Settings" name="DerpFest-Ten/platform_packages_apps_Settings" remote="github" revision="ten-nosubs" />
+  <project path="packages/apps/SettingsIntelligence" name="DerpFest-Ten/platform_packages_apps_SettingsIntelligence" remote="github" revision="ten-nosubs" />
   <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
   <project path="packages/apps/Snap" name="platform_packages_apps_Snap" remote="derp" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="derp" />
@@ -138,8 +139,7 @@
   <project path="vendor/derp" name="platform_vendor_derp" remote="derp" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="derp" />
   <project path="vendor/google-customization" name="platform_vendor_google-customization" remote="derp" />
-  <project path="vendor/lawnchair" name="platform_vendor_lawnchair" remote="derp" />
-  <project path="vendor/overlay" name="platform_vendor_overlay" remote="derp" />
+  <project path="vendor/overlay" name="DerpFest-Ten/platform_vendor_overlay" remote="github" revision="ten-nosubs" />
   <project path="vendor/pixelgapps" name="NurKeinNeid/platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="derp" />
 
