@@ -54,6 +54,7 @@
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="derp" />
   <project path="external/google" name="platform_external_google" remote="derp" />
   <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="syberia-bb" />
+  <project path="external/pulse" name="platform_external_pulse" remote="derp" />
   <project path="external/selinux" name="platform_external_selinux" remote="derp" />
   <project path="external/skia" name="platform_external_skia" remote="derp" />
   <project path="external/tinyalsa" name="platform_external_tinyalsa" remote="derp" />
